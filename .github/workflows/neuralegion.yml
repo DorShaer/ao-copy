@@ -172,4 +172,4 @@ jobs:
           discovery_types: |
             [ "crawler" ]
           crawler_urls: |
-            [ "https://brokencrystals.com" ] # ✏️ Update this to the url you wish to scan
+            [ "https://brokencrystals.com" ] # ✏️ Updates this to the url you wish to scan
