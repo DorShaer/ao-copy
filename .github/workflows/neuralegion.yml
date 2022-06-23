@@ -162,7 +162,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Start Nexploit Scan 🏁
         id: start
-        uses: NeuraLegion/run-scan@release
+        uses: NeuraLegion/run-scan
         with:
           api_token: ${{ secrets.NEURALEGION_TOKEN }}
           name: GitHub scan ${{ github.sha }}
