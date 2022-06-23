@@ -12,3 +12,4 @@ steps:
       file_id: LiYknMYSdbSZbqgMaC9Sj
   - name: Get the output scan url
     run: echo "The scan was started on ${{ steps.start.outputs.url }}"
+    .
