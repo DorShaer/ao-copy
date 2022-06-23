@@ -1,0 +1,14 @@
+steps:
+  - name: Start NeuraLegion Scan
+    id: start
+    uses: NeuraLegion/run-scan@v1.1
+    with:
+      api_token: ${{ secrets.NEURALEGION_TOKEN }}
+      name: GitHub scan ${{ github.sha }}
+      discovery_types: |
+        [ "crawler", "archive" ]
+      crawler_urls: |
+        [ "http://vulnerable-bank.com" ]
+      file_id: LiYknMYSdbSZbqgMaC9Sj
+  - name: Get the output scan url
+    run: echo "The scan was started on ${{ steps.start.outputs.url }}"
